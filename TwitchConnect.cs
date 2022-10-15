@@ -10,6 +10,7 @@ using System.Collections.Generic;
 
 public class TwitchConnect : MonoBehaviour
 {
+    //Keeping a local list of users prevents users from creating multiple prefabs
     private List<string> activeUsers = new List<string>();
 
     private TcpClient twitchClient;
@@ -88,8 +89,9 @@ public class TwitchConnect : MonoBehaviour
                         //Creates new movable animal object (duck) based
                         //on last user who chatted the keyword
                         GameObject newDuck = Instantiate(duck, new Vector3(-0.05f, -4.59f, 0f), Quaternion.identity);
-                        AIMovement duckScript = newDuck.GetComponent<AIMovement>();
-                        duckScript.SetName(chatName);
+                        //**Uncomment this to display the player's name on their spawned prefab
+                        //AIMovement duckScript = newDuck.GetComponent<AIMovement>();
+                        //duckScript.SetName(chatName);
                         activeUsers.Add(chatName);
 
                         //**Uncomment the code here to integrate with DynamoDB
