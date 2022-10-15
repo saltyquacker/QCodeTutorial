@@ -4,18 +4,14 @@
 //         Unity and AWSDynamoDB for reading, 
 //         writing, and deleting data.
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Amazon;
+using UnityEngine;
 using Amazon.Runtime;
-using UnityEngine.UI;
 using Amazon.DynamoDBv2;
 using Amazon.CognitoIdentity;
 using Amazon.DynamoDBv2.Model;
-using Amazon.Runtime.Internal;
+using System.Collections.Generic;
 using Amazon.DynamoDBv2.DataModel;
-using Amazon.DynamoDBv2.DocumentModel;
 
 //##TableName## replaced with DynamoDB table name
 
