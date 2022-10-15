@@ -92,14 +92,15 @@ public class TwitchConnect : MonoBehaviour
                         duckScript.SetName(chatName);
                         activeUsers.Add(chatName);
 
+                        //**Uncomment the code here to integrate with DynamoDB
                         //Grab AWSManager script from the AWSPrefab game object
-                        GameObject aws = GameObject.Find("AWSPrefab");
-                        AWSManager awsScript = aws.GetComponent<AWSManager>();
-                        string dt = DateTime.Now.ToString();
+                        //GameObject aws = GameObject.Find("AWSPrefab");
+                        //AWSManager awsScript = aws.GetComponent<AWSManager>();
+                        //string dt = DateTime.Now.ToString();
 
                         //SaveDataTime() to add new date and time to user's
                         //list on your DynamoDB table
-                        awsScript.SaveDateTime(dt, chatName);
+                        //awsScript.SaveDateTime(dt, chatName);
                     }
                 }
             }
