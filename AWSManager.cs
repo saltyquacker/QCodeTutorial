@@ -1,6 +1,6 @@
 ﻿//saltyquacker.games@gmail.com
 //Date:    10/14/2022
-//Purpose: Create an database connection between
+//Purpose: Create a database connection between
 //         Unity and AWSDynamoDB for reading, 
 //         writing, and deleting data.
 
