@@ -19,7 +19,6 @@ public class AWSManager : MonoBehaviour
 {
     private AmazonDynamoDBClient client;
     private DynamoDBContext context;
-    private AWSCredentials credentials;
 
     //Example Database object for user and list of dates
     [DynamoDBTable("##TableName##")]
