@@ -5,12 +5,7 @@
 using System;
 using System.IO;
 using UnityEngine;
-using System.Linq;
-using UnityEngine.UI;
-using System.Collections;
 using System.Net.Sockets;
-using System.Globalization;
-using System.ComponentModel;
 using System.Collections.Generic;
 
 public class TwitchConnect : MonoBehaviour
